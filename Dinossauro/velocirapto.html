@@ -5,20 +5,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Velocirapto</title>
     <link rel="stylesheet" href="estilo.css">
+    <script src="./velociraptor.js" defer></script>
 </head>
 <body>
     
+    <div class="imagem index">
+        <a href="index.html">
+            <img src="./Imagens/Dinossauros(2).png" alt="Dinossauro">
+        </a>
+    </div>
     <div class="info">
-        <div class="pontos">Pontuação:<span id="pontuacao">0</span></div>
+        <div class="pontos">Pontuação:<span id="pontos">0</span></div>
         <div class="tempo">Tempo:<span id="tempo">10s</span></div>
     </div>
     
-    <div class="jogo">
-
-
-    </div>
+    <div class="jogo" id="jogo"></div>
     <div class="botao">
-        <button onclick="comecar()">Começar</button> 
+        <button onclick="startGame()">Começar</button> 
     </div>
+    <div id="mensagemfinal" class="mensagemfinal"></div>
+    <img src="./Imagens/Velociraptor (2).png" class="image_velo">
+    <img src="./Imagens/Velociraptor.png" class="image_velo2">
+
 </body>
 </html>

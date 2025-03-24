@@ -27,7 +27,7 @@ body {
     width:  400px;
     height: 500px;
     border: 2px solid #556B2F;
-    margin-left: 310px;
+    margin-left: 500px;
     margin-top: 50px;
     border-radius: 20px;
     background-color: #A8D5BA;
@@ -60,7 +60,7 @@ body {
     width:  400px;
     height: 500px;
     border: 2px solid #556B2F;
-    margin-left: 760px;
+    margin-left: 1000px;
     margin-top: 50px;
     border-radius: 20px;
     background-color: #A8D5BA;
@@ -71,38 +71,6 @@ body {
 
 }
 .enter_Oryctod{
-    position: absolute;
-    border: 2px solid #556B2F;
-    width: 100px;
-    height: 50px;
-    background-color: #6B8E23;
-    display: flex;
-    justify-content: center;
-    align-items: center; 
-    border-radius: 15px;
-    bottom: 80px;
-    left: 50%;
-    transform: translateX(-50%);
-    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
-}
-
-
-.Pterodatilo{
-    position: absolute;
-    width:  400px;
-    height: 500px;
-    border: 2px solid #556B2F;
-    margin-left: 1210px;
-    margin-top: 50px;
-    border-radius: 20px;
-    background-color: #A8D5BA;
-    padding: 15px;
-    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);
-    font-family: 'Arial', sans-serif;
-    color: #2F4F4F;
-
-}
-.enter_Ptero{
     position: absolute;
     border: 2px solid #556B2F;
     width: 100px;
@@ -154,14 +122,14 @@ a{
 .jogo{
     position: relative;
     border: 1px solid #333;
-    width: 500px;
-    height: 500px;
+    width: 28%; 
+    height: 500px; 
     top: 100px;
     left: 700px;
 
 }
 
-.botao button {
+.botao button{
     background-color: #4CAF50;
     color: white;
     padding: 14px 28px;
@@ -171,8 +139,8 @@ a{
     cursor: pointer;
     transition: all 0.3s ease;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
-    position: relative;
-    margin-left: 890px;
+    position: absolute;
+    margin-left: 910px;
     margin-top: 100px;
 
 }
@@ -190,4 +158,181 @@ a{
     padding: 10px 15px;
     border-radius: 10px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+.button {
+    width: 50px;
+    height: 50px;
+    background-color: green;
+    position: absolute; 
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+.mensagemfinal{
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #f00;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    border-radius: 8px;
+    display: none; 
+    position: absolute; 
+    top: 300px; 
+    left: 50%;
+    transform: translateX(-50%); 
+    text-align: center;
+}
+
+.image_velo {
+    position: relative; 
+    bottom: 0;  
+    left: 0;   
+    width: 550px;  
+    height: auto; 
+}
+
+.image_velo2 {
+    position: relative; 
+    bottom: 0;  
+    left: 700px;   
+    width: 550px;  
+    height: auto;  
+}
+
+.imagem.index {
+    position: absolute;
+    top: 10px;          
+    left: 10px; 
+    width: 100px;         
+    height: auto;
+}
+
+/* Oryctodromeus */
+
+.grade {
+    display: grid;
+    grid-template-columns: repeat(5, 80px); 
+    gap: 5px;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.cell {
+    width: 80px;
+    height: 80px;
+    background-color: #A8D5BA;
+    border: 2px solid #556B2F; 
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    color: #2F4F4F; 
+    cursor: pointer; 
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2); 
+    transition: background-color 0.3s ease;
+}
+.cell.revealed {
+    background-color: #D2B48C; 
+}
+
+.cell span {
+    font-size: 18px;
+    color: #8B4513;
+}
+
+
+.info2 {
+
+    display: flex;
+    gap: 20px;
+    margin-bottom: 20px;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    font-weight: bold;
+    color: #2e7d32;
+    background-color: rgba(255, 255, 255, 0.6);
+    padding: 10px 15px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.image_oryct {
+    position: fixed; 
+    bottom: 0;  
+    left: 0;   
+    width: 550px;  
+    height: auto; 
+}
+
+.image_oryct2 {
+    position: fixed; 
+    bottom: 0;  
+    right: 0;   
+    width: 550px;  
+    height: auto;  
+}
+
+/* T-Rex */
+
+.game_box {
+    width: 80%;
+    height: 500px;
+    border: 1px solid #333;
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+
+}
+
+.cacto {
+    position: absolute;
+    bottom: 0;
+    width: 80px;
+    animation: cacto_animation 1.5s infinite linear; 
+
+}
+
+@keyframes cacto_animation  {
+    from {
+        right: -100px;
+    }
+    
+    to {
+        right: 100%;
+    }
+}
+
+.Dino {
+    width: 150px;
+    position: absolute;
+    bottom: 0;
+}
+
+.jump {
+    animation: Dino_animation 500ms ease-in-out;
+}
+@keyframes Dino_animation{
+
+    0% {
+        bottom: 0;
+    }
+ 
+    40% {
+        bottom: 180px;
+    }
+
+    50% {
+        bottom: 180px;
+    }
+
+    60% {
+        bottom: 180px;
+    }
+
+    100% {
+        bottom: 0;
+    }
 }
