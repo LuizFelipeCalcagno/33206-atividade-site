@@ -4,6 +4,7 @@ let score = 0;
 const scoreElement = document.getElementById('score');
 
 
+
 const jump = () => {
     Dino.classList.add('jump');
     setTimeout(() => {
